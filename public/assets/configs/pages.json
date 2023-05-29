@@ -290,11 +290,6 @@
                         "linkKey": "communicationSettings",
                         "type": "dialog",
                         "value": "changeNotifications"
-                      },
-                      {
-                        "linkKey": "languageSettings",
-                        "type": "dialog",
-                        "value": "changeLanguage"
                       }
                     ]
                   }
@@ -329,7 +324,7 @@
                   "itemKey": "communication",
                   "config": {
                     "type": "communicationSettings",
-                    "hideLanguageSelector": false
+                    "hideLanguageSelector": true
                   }
                 },
                 {

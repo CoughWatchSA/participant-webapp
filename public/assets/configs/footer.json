@@ -41,16 +41,6 @@
           "value": "/accessibility"
         }
       ]
-    },
-    {
-      "columnKey": "languages",
-      "items": [
-        {
-          "type": "language",
-          "itemKey": "en",
-          "value": "en"
-        }
-      ]
     }
   ]
 }
