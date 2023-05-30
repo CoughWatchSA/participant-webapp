@@ -1,0 +1,16 @@
+name: Deploy to GKE production
+run-name: Deploy production ${{ inputs.image_version }}
+on:
+  workflow_dispatch:
+    inputs:
+      image_version:
+        default: v0.0.1
+        required: true
+        type: string
+jobs:
+  deploy:
+    uses: ./.github/workflows/deploy.yml
+    with:
+      image_version: ${{inputs.image_version}}
+      environment: production
+    secrets: inherit

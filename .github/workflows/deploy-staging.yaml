@@ -1,0 +1,16 @@
+name: Deploy to GKE staging
+run-name: Deploy staging ${{ inputs.image_version }}-staging
+on:
+  workflow_dispatch:
+    inputs:
+      image_version:
+        default: v0.0.1
+        required: true
+        type: string
+jobs:
+  deploy:
+    uses: ./.github/workflows/deploy.yml
+    with:
+      image_version: ${{inputs.image_version}}-staging
+      environment: staging
+    secrets: inherit
