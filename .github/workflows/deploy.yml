@@ -24,6 +24,7 @@ jobs:
     uses: ./.github/workflows/docker-image.yml
     with:
       image_version: ${{inputs.image_version}}
+      environment: ${{ inputs.environment }}
     secrets: inherit
   deploy:
     environment: ${{ inputs.environment }}
