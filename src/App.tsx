@@ -1,6 +1,5 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { AppCore } from 'case-web-app-core';
-import { useTranslation } from 'react-i18next';
 
 import { AppConfig } from 'case-web-app-core/build/types/appConfig';
 import { FooterConfig } from 'case-web-app-core/build/types/footerConfig';
