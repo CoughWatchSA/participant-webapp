@@ -31,7 +31,7 @@
   },
   "signup": {
     "title": "Sign up",
-    "info": "",
+    "info": "By clicking the **Sign up** button you give your consent to the <a href='study-consent' target='_blank'>CoughWatchSA study conditions</a>",
     "emailInputLabel": "Email",
     "emailInputPlaceholder": "Enter Email",
     "passwordInputLabel": "Password",
@@ -162,7 +162,7 @@
     "aliasInputLabel": "Nickname",
     "aliasInputPlaceholder": "Nickname",
     "consentCheckboxLabel": "Consent",
-    "consentCheckboxText": "You may only create a profile and complete questionnaires for yourself or as a parent or legal representative of your child who has not yet reached the age of 18",
+    "consentCheckboxText": "By creating a profile four your child, as a parent or legal representative, you and your child give your consent to the following study conditions: <a href='study-consent-parental' target='_blank'>Parental consent</a>, <a href='study-consent-7-11' target='_blank'>Children consent (7-11 years)</a>, <a href='study-consent-12-17' target='_blank'>Children consent (12-17 years)</a>",
     "avatarSelectorLabel": "Choose a picture"
   },
   "changeLanguage": {

@@ -581,6 +581,110 @@
       ]
     },
     {
+      "path": "/study-consent",
+      "pageKey": "study-consent",
+      "rows": [
+        {
+          "key": "content",
+          "containerClassName": "my-3 min-vh-60",
+          "columns": [
+            {
+              "key": "pCol",
+              "className": "col-12 col-sm-10 col-md-8",
+              "items": [
+                {
+                  "itemKey": "studyPolicy",
+                  "className": "",
+                  "config": {
+                    "type": "markdown",
+                    "markdownUrl": "/consent/study.md"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/study-consent-parental",
+      "pageKey": "study-consent-parental",
+      "rows": [
+        {
+          "key": "content",
+          "containerClassName": "my-3 min-vh-60",
+          "columns": [
+            {
+              "key": "pCol",
+              "className": "col-12 col-sm-10 col-md-8",
+              "items": [
+                {
+                  "itemKey": "studyPolicy",
+                  "className": "",
+                  "config": {
+                    "type": "markdown",
+                    "markdownUrl": "/consent/study-parental.md"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/study-consent-7-11",
+      "pageKey": "study-consent-7-11",
+      "rows": [
+        {
+          "key": "content",
+          "containerClassName": "my-3 min-vh-60",
+          "columns": [
+            {
+              "key": "pCol",
+              "className": "col-12 col-sm-10 col-md-8",
+              "items": [
+                {
+                  "itemKey": "studyPolicy",
+                  "className": "",
+                  "config": {
+                    "type": "markdown",
+                    "markdownUrl": "/consent/study-7-11.md"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/study-consent-12-17",
+      "pageKey": "study-consent-12-17",
+      "rows": [
+        {
+          "key": "content",
+          "containerClassName": "my-3 min-vh-60",
+          "columns": [
+            {
+              "key": "pCol",
+              "className": "col-12 col-sm-10 col-md-8",
+              "items": [
+                {
+                  "itemKey": "studyPolicy",
+                  "className": "",
+                  "config": {
+                    "type": "markdown",
+                    "markdownUrl": "/consent/study-12-17.md"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "path": "/accessibility",
       "pageKey": "accessibility",
       "rows": [
