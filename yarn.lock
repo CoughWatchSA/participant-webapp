@@ -4156,10 +4156,10 @@ case-sensitive-paths-webpack-plugin@^2.4.0:
   resolved "https://registry.yarnpkg.com/@influenzanet/case-web-app-core/-/case-web-app-core-2.7.4-staging.2.tgz#c442639bc192fb756bdb16bcabc97348876e1ac4"
   integrity sha512-fl2XXxBwe3tSB92hhaK0H0L7J4UUhYb3tOnJ6zPvtk3kaZ2mLDfJ9Cw8lsFRaju9bv5sC788JO20OakGOBM1qg==
 
-"case-web-ui@npm:@influenzanet/case-web-ui@^v1.14.8-staging":
-  version "1.14.8-staging"
-  resolved "https://registry.yarnpkg.com/@influenzanet/case-web-ui/-/case-web-ui-1.14.8-staging.tgz#5cd5a03129509dac43b5d087d7329725178134a1"
-  integrity sha512-Gq0R4dsJgLaN0Ni2nU5zthAKoa4hd9eKtZhOw6jO9QFtTXPecL0RVWZ/rMk93MqU1dEx1adSrfSWEJpomrYxcQ==
+"case-web-ui@npm:@influenzanet/case-web-ui@^v1.14.8-staging.1":
+  version "1.14.8-staging.1"
+  resolved "https://registry.yarnpkg.com/@influenzanet/case-web-ui/-/case-web-ui-1.14.8-staging.1.tgz#5efdd5d2b3dc53af899115023c30a9a6ca179e13"
+  integrity sha512-icicadxlR2Qg7Q8RYKo0+/E5SaPbMNAwA7GZe/mMGNn1CIRjkVZ/qt6gpSJ2Hz27shM4jOHLVvkjN7fV3cAT5A==
   dependencies:
     "@fortawesome/fontawesome-free" "^5.15.4"
 
