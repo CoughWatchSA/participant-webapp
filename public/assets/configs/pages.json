@@ -24,9 +24,9 @@
                   "config": {
                     "type": "teaserImage",
                     "image": {
-                      "url": "/images/landing.jpg",
-                      "height": 367,
-                      "backgroundPosition": "47% 27%"
+                      "url": "/images/landing.png",
+                      "backgroundPosition": "50% 43%",
+                      "height": 400
                     },
                     "textBox": {
                       "className": "col col-md-6 col-lg-4 offset-0 offset-lg-1"
@@ -219,9 +219,9 @@
                   "config": {
                     "type": "teaserImage",
                     "image": {
-                      "url": "/images/landing.jpg",
+                      "url": "/images/landing.png",
                       "height": 367,
-                      "backgroundPosition": "47% 27%"
+                      "height": 400
                     },
                     "textBox": {
                       "className": "col col-md-6 col-lg-4 offset-0 offset-lg-1"
@@ -456,19 +456,7 @@
             {
               "key": "ti",
               "className": "p-0",
-              "items": [
-                {
-                  "itemKey": "topImage",
-                  "config": {
-                    "type": "teaserImage",
-                    "image": {
-                      "url": "/images/about-teaser.jpg",
-                      "backgroundPosition": "50% 43%",
-                      "height": 420
-                    }
-                  }
-                }
-              ]
+              "items": []
             }
           ]
         },
