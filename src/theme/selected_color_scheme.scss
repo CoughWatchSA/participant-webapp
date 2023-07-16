@@ -5,8 +5,10 @@
 /* $primary: #990011FF;
 $secondary: rgb(248, 228, 225); */
 
-$primary: #2bc1be;
-$secondary: #c5fee0;
+$primary: #13bcb3;
+// $secondary:lighten(#5a6873, 20%);
+// $secondary:lighten($primary, 50%);
+$secondary: lightgrey;
 $success: #39870C;
 $warning: #EEA230;
 $danger: #D92321;

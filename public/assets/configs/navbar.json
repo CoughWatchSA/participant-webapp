@@ -6,14 +6,16 @@
       "hideWhen": "auth",
       "itemKey": "home",
       "url": "/welcome",
-      "iconClass": "fas fa-home"
+      "iconClass": "cwsa-icon",
+      "className": "home-link"
     },
     {
       "type": "internal",
       "hideWhen": "unauth",
       "itemKey": "authhome",
       "url": "/home",
-      "iconClass": "fas fa-home"
+      "iconClass": "cwsa-icon",
+      "className": "home-link"
     },
     {
       "type": "internal",

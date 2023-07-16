@@ -16,26 +16,95 @@
 $enable-rounded: false !default;
 
 .captcha-badge-alt {
-  color: map-get($theme-colors, "grey-7");
+  color: map-get($theme-colors, 'grey-7');
   & a {
     color: #000;
   }
 }
 
-.grecaptcha-badge { visibility: hidden; }
+.grecaptcha-badge {
+  visibility: hidden;
+}
 
 .min-h-478 {
   @media (min-width: 768px) {
-    min-height: 478px
+    min-height: 478px;
   }
 }
 
 .chart-center {
   @media (min-width: 990px) {
-    margin-left: 22.5%
+    margin-left: 22.5%;
   }
 }
 
+.cwsa-icon {
+  display: none;
+}
 
+.nav-link {
+  height: auto;
+  &.active {
+    background-color: map-get($theme-colors, 'primary') !important;
+    text-decoration-thickness: 5px;
+    color: white !important;
+  }
+  &:focus:not(.active),
+  &:hover:not(.active) {
+    background-color: map-get($theme-colors, 'primary') !important;
+  }
+  &.active:hover {
+    background-color: map-get($theme-colors, 'primary') !important;
+  }
+}
+
+.loading-placeholder {
+  background-color: white !important;
+  &.loading-page {
+    .spinner-border {
+      display:none
+    }
+  }
+}
+
+.coughwatch {
+  $card-color: white;
+  $nav-tabs-link-active-color: white;
+  $nav-link-color: white;
+
+  .navbar {
+    div {
+      align-items: center !important;
+    }
+  }
+
+  .nav-link {
+    &.home-link {
+      display: flex;
+      align-items: center;
+      padding-left: 0px;
+
+      .cwsa-icon {
+        height: 60px;
+        width: 60px;
+        margin-right: 150px !important;
+        display: inline;
+        background-image: url('../assets/images/logo.png');
+        background-size: cover;
+        margin-right: 100%;
+      }
+    }
+  }
+
+  ul.nav {
+    align-items: center;
+  }
+
+  .teaser-text {
+    h4 {
+      font-weight: bold;
+    }
+  }
+}
 @import '~case-web-ui/build/scss/iconfonts';
 @import '~bootstrap/scss/bootstrap.scss';

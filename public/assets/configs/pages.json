@@ -10,6 +10,7 @@
       "path": "/welcome",
       "pageKey": "landing",
       "hideWhen": "auth",
+      "hideTitleBar": true,
       "rows": [
         {
           "key": "teaserImage",
@@ -29,7 +30,7 @@
                       "height": 400
                     },
                     "textBox": {
-                      "className": "col col-md-6 col-lg-4 offset-0 offset-lg-1"
+                      "className": "col col-md-6 col-lg-4 offset-0 offset-lg-1 teaser-text"
                     }
                   }
                 }
@@ -64,7 +65,7 @@
                   "className": "h-100",
                   "config": {
                     "type": "imageCard",
-                    "showActionBtn": true,
+                    "showActionBtn": false,
                     "action": {
                       "type": "navigate",
                       "value": "/results"
@@ -83,7 +84,7 @@
                   "className": "h-100",
                   "config": {
                     "type": "imageCard",
-                    "showActionBtn": true,
+                    "showActionBtn": false,
                     "action": {
                       "type": "openDialog",
                       "value": "signup"
@@ -102,7 +103,7 @@
                   "className": "h-100",
                   "config": {
                     "type": "imageCard",
-                    "showActionBtn": true,
+                    "showActionBtn": false,
                     "action": {
                       "type": "navigate",
                       "value": "/news"
@@ -121,7 +122,7 @@
                   "className": "h-100",
                   "config": {
                     "type": "imageCard",
-                    "showActionBtn": true,
+                    "showActionBtn": false,
                     "action": {
                       "type": "navigate",
                       "value": "/about"
@@ -140,7 +141,7 @@
                   "className": "h-100",
                   "config": {
                     "type": "imageCard",
-                    "showActionBtn": true,
+                    "showActionBtn": false,
                     "action": {
                       "type": "navigate",
                       "value": "/info"
@@ -177,6 +178,7 @@
     },
     {
       "path": "/results",
+      "hideTitleBar": true,
       "pageKey": "results",
       "rows": [
         {
@@ -204,6 +206,7 @@
     {
       "path": "/home",
       "hideWhen": "unauth",
+      "hideTitleBar": true,
       "pageKey": "landing",
       "rows": [
         {
@@ -224,7 +227,7 @@
                       "height": 400
                     },
                     "textBox": {
-                      "className": "col col-md-6 col-lg-4 offset-0 offset-lg-1"
+                      "className": "col col-md-6 col-lg-4 offset-0 offset-lg-1 teaser-text"
                     }
                   }
                 }
@@ -303,6 +306,7 @@
     {
       "path": "/settings",
       "hideWhen": "unauth",
+      "hideTitleBar": true,
       "pageKey": "settings",
       "rows": [
         {
@@ -379,6 +383,7 @@
     {
       "path": "/faq",
       "pageKey": "faq",
+      "hideTitleBar": true,
       "rows": [
         {
           "key": "content",
@@ -422,7 +427,7 @@
                       "value": "signup"
                     },
                     "imageSrc": "/images/participate.jpg",
-                    "showActionBtn": true
+                    "showActionBtn": false
                   }
                 },
                 {
@@ -436,7 +441,7 @@
                       "value": "/home"
                     },
                     "imageSrc": "/images/survey.jpg",
-                    "showActionBtn": true
+                    "showActionBtn": false
                   }
                 }
               ]
@@ -448,6 +453,7 @@
     {
       "path": "/about",
       "pageKey": "about",
+      "hideTitleBar": true,
       "rows": [
         {
           "key": "teaserImage",
@@ -493,7 +499,7 @@
                       "value": "signup"
                     },
                     "imageSrc": "/images/participate.jpg",
-                    "showActionBtn": true
+                    "showActionBtn": false
                   }
                 },
                 {
@@ -507,7 +513,7 @@
                       "value": "/home"
                     },
                     "imageSrc": "/images/survey.jpg",
-                    "showActionBtn": true
+                    "showActionBtn": false
                   }
                 }
               ]
@@ -519,6 +525,7 @@
     {
       "path": "/contact",
       "pageKey": "contact",
+      "hideTitleBar": true,
       "rows": [
         {
           "key": "content",
@@ -727,6 +734,7 @@
     {
       "path": "/news",
       "pageKey": "news",
+      "hideTitleBar": true,
       "rows": [
         {
           "key": "content",
