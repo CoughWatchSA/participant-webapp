@@ -131,25 +131,6 @@
                   }
                 }
               ]
-            },
-            {
-              "key": "infoCard",
-              "className": "col-12 col-lg-4 mt-3 min-h-478",
-              "items": [
-                {
-                  "itemKey": "infoCard",
-                  "className": "h-100",
-                  "config": {
-                    "type": "imageCard",
-                    "showActionBtn": false,
-                    "action": {
-                      "type": "navigate",
-                      "value": "/info"
-                    },
-                    "imageSrc": "/images/info.jpg"
-                  }
-                }
-              ]
             }
           ]
         },
@@ -167,33 +148,6 @@
                   "config": {
                     "type": "markdown",
                     "markdownUrl": "markdowns/sponsors.md",
-                    "flavor": "chart-renderer"
-                  }
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "path": "/results",
-      "hideTitleBar": true,
-      "pageKey": "results",
-      "rows": [
-        {
-          "key": "contentRow",
-          "containerClassName": "my-3 min-vh-60",
-          "columns": [
-            {
-              "key": "contentCol",
-              "className": "col-12 col-lg-8",
-              "items": [
-                {
-                  "itemKey": "results",
-                  "config": {
-                    "type": "markdown",
-                    "markdownUrl": "markdowns/results.md",
                     "flavor": "chart-renderer"
                   }
                 }
@@ -304,155 +258,8 @@
       ]
     },
     {
-      "path": "/settings",
-      "hideWhen": "unauth",
-      "hideTitleBar": true,
-      "pageKey": "settings",
-      "rows": [
-        {
-          "key": "mainRow",
-          "containerClassName": "my-3 min-vh-60",
-          "columns": [
-            {
-              "key": "settingsCol",
-              "className": "col-12 col-lg-8",
-              "items": [
-                {
-                  "itemKey": "account",
-                  "config": {
-                    "type": "accountSettings",
-                    "allowProfileSettings": true
-                  }
-                },
-                {
-                  "itemKey": "communication",
-                  "config": {
-                    "type": "communicationSettings",
-                    "hideLanguageSelector": true
-                  }
-                },
-                {
-                  "itemKey": "deletion",
-                  "className": "",
-                  "config": {
-                    "type": "deleteAccount"
-                  }
-                }
-              ]
-            },
-            {
-              "key": "helpCol",
-              "className": "col-12 col-lg-4 mt-3 mt-lg-0",
-              "items": [
-                {
-                  "itemKey": "references",
-                  "config": {
-                    "type": "linkList",
-                    "links": [
-                      {
-                        "linkKey": "faqLink",
-                        "type": "internal",
-                        "value": "/faq"
-                      },
-                      {
-                        "linkKey": "privacyStatementLink",
-                        "type": "internal",
-                        "value": "/privacy"
-                      },
-                      {
-                        "linkKey": "contactLink",
-                        "type": "internal",
-                        "value": "/contact"
-                      }
-                    ]
-                  }
-                },
-                {
-                  "itemKey": "systemInfo",
-                  "config": {
-                    "type": "systemInfo",
-                    "showBrowserInfo": true
-                  }
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "path": "/faq",
-      "pageKey": "faq",
-      "hideTitleBar": true,
-      "rows": [
-        {
-          "key": "content",
-          "fullWidth": false,
-          "containerClassName": "my-3 min-vh-60",
-          "columns": [
-            {
-              "key": "mainCol",
-              "className": "col-12 col-lg-8",
-              "items": [
-                {
-                  "itemKey": "topFaq",
-                  "className": "",
-                  "config": {
-                    "type": "simpleCard",
-                    "variant": "h2"
-                  }
-                },
-                {
-                  "itemKey": "faq",
-                  "className": "",
-                  "config": {
-                    "type": "accordionList",
-                    "accordionCtrlsKey": "accordionControls"
-                  }
-                }
-              ]
-            },
-            {
-              "key": "cardSignupCol",
-              "className": "col-12 col-lg-4 mt-3 mt-lg-0",
-              "items": [
-                {
-                  "itemKey": "signupCard",
-                  "hideWhen": "auth",
-                  "className": "",
-                  "config": {
-                    "type": "imageCard",
-                    "action": {
-                      "type": "openDialog",
-                      "value": "signup"
-                    },
-                    "imageSrc": "/images/participate.jpg",
-                    "showActionBtn": false
-                  }
-                },
-                {
-                  "itemKey": "surveyCard",
-                  "hideWhen": "unauth",
-                  "className": "",
-                  "config": {
-                    "type": "imageCard",
-                    "action": {
-                      "type": "navigate",
-                      "value": "/home"
-                    },
-                    "imageSrc": "/images/survey.jpg",
-                    "showActionBtn": false
-                  }
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "path": "/about",
-      "pageKey": "about",
+      "path": "/overview",
+      "pageKey": "overview",
       "hideTitleBar": true,
       "rows": [
         {
@@ -476,10 +283,10 @@
               "className": "col-12 col-lg-8",
               "items": [
                 {
-                  "itemKey": "aboutPolicy",
+                  "itemKey": "overview",
                   "config": {
                     "type": "markdown",
-                    "markdownUrl": "/markdowns/about.md"
+                    "markdownUrl": "/markdowns/overview.md"
                   }
                 }
               ]
@@ -523,9 +330,291 @@
       ]
     },
     {
-      "path": "/contact",
-      "pageKey": "contact",
+      "path": "/about-us",
+      "pageKey": "about-us",
       "hideTitleBar": true,
+      "rows": [
+        {
+          "key": "teaserImage",
+          "fullWidth": true,
+          "columns": [
+            {
+              "key": "ti",
+              "className": "p-0",
+              "items": []
+            }
+          ]
+        },
+        {
+          "key": "content",
+          "fullWidth": false,
+          "containerClassName": "my-3 min-vh-60",
+          "columns": [
+            {
+              "key": "mainCol",
+              "className": "col-12 col-lg-8",
+              "items": [
+                {
+                  "itemKey": "about-us",
+                  "config": {
+                    "type": "markdown",
+                    "markdownUrl": "/markdowns/about-us.md"
+                  }
+                }
+              ]
+            },
+            {
+              "key": "cardSignupCol",
+              "className": "col-12 col-lg-4 mt-3 mt-lg-0",
+              "items": [
+                {
+                  "itemKey": "signupCard",
+                  "hideWhen": "auth",
+                  "className": "",
+                  "config": {
+                    "type": "imageCard",
+                    "action": {
+                      "type": "openDialog",
+                      "value": "signup"
+                    },
+                    "imageSrc": "/images/participate.jpg",
+                    "showActionBtn": false
+                  }
+                },
+                {
+                  "itemKey": "surveyCard",
+                  "hideWhen": "unauth",
+                  "className": "",
+                  "config": {
+                    "type": "imageCard",
+                    "action": {
+                      "type": "navigate",
+                      "value": "/home"
+                    },
+                    "imageSrc": "/images/survey.jpg",
+                    "showActionBtn": false
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/how-it-works",
+      "pageKey": "how-it-works",
+      "hideTitleBar": true,
+      "rows": [
+        {
+          "key": "teaserImage",
+          "fullWidth": true,
+          "columns": [
+            {
+              "key": "ti",
+              "className": "p-0",
+              "items": []
+            }
+          ]
+        },
+        {
+          "key": "content",
+          "fullWidth": false,
+          "containerClassName": "my-3 min-vh-60",
+          "columns": [
+            {
+              "key": "mainCol",
+              "className": "col-12 col-lg-8",
+              "items": [
+                {
+                  "itemKey": "how-it-works",
+                  "config": {
+                    "type": "markdown",
+                    "markdownUrl": "/markdowns/how-it-works.md"
+                  }
+                }
+              ]
+            },
+            {
+              "key": "cardSignupCol",
+              "className": "col-12 col-lg-4 mt-3 mt-lg-0",
+              "items": [
+                {
+                  "itemKey": "signupCard",
+                  "hideWhen": "auth",
+                  "className": "",
+                  "config": {
+                    "type": "imageCard",
+                    "action": {
+                      "type": "openDialog",
+                      "value": "signup"
+                    },
+                    "imageSrc": "/images/participate.jpg",
+                    "showActionBtn": false
+                  }
+                },
+                {
+                  "itemKey": "surveyCard",
+                  "hideWhen": "unauth",
+                  "className": "",
+                  "config": {
+                    "type": "imageCard",
+                    "action": {
+                      "type": "navigate",
+                      "value": "/home"
+                    },
+                    "imageSrc": "/images/survey.jpg",
+                    "showActionBtn": false
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/reports",
+      "pageKey": "reports",
+      "hideTitleBar": true,
+      "rows": [
+        {
+          "key": "teaserImage",
+          "fullWidth": true,
+          "columns": [
+            {
+              "key": "ti",
+              "className": "p-0",
+              "items": []
+            }
+          ]
+        },
+        {
+          "key": "content",
+          "fullWidth": false,
+          "containerClassName": "my-3 min-vh-60",
+          "columns": [
+            {
+              "key": "mainCol",
+              "className": "col-12 col-lg-8",
+              "items": [
+                {
+                  "itemKey": "reports",
+                  "config": {
+                    "type": "markdown",
+                    "markdownUrl": "/markdowns/reports.md"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/resources",
+      "pageKey": "resources",
+      "hideTitleBar": true,
+      "rows": [
+        {
+          "key": "teaserImage",
+          "fullWidth": true,
+          "columns": [
+            {
+              "key": "ti",
+              "className": "p-0",
+              "items": []
+            }
+          ]
+        },
+        {
+          "key": "content",
+          "fullWidth": false,
+          "containerClassName": "my-3 min-vh-60",
+          "columns": [
+            {
+              "key": "mainCol",
+              "className": "col-12 col-lg-8",
+              "items": [
+                {
+                  "itemKey": "resources",
+                  "config": {
+                    "type": "markdown",
+                    "markdownUrl": "/markdowns/resources.md"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/news",
+      "pageKey": "news",
+      "hideTitleBar": true,
+      "rows": [
+        {
+          "key": "content",
+          "containerClassName": "my-3 min-vh-60",
+          "columns": [
+            {
+              "key": "pCol",
+              "className": "col-12 col-md-10",
+              "items": [
+                {
+                  "itemKey": "news",
+                  "className": "",
+                  "config": {
+                    "type": "markdown",
+                    "markdownUrl": "/markdowns/news.md"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/faq",
+      "pageKey": "faq",
+      "hideTitleBar": true,
+      "rows": [
+        {
+          "key": "content",
+          "fullWidth": false,
+          "containerClassName": "my-3 min-vh-60",
+          "columns": [
+            {
+              "key": "mainCol",
+              "className": "col-12 col-lg-10",
+              "items": [
+                {
+                  "itemKey": "topFaq",
+                  "className": "",
+                  "config": {
+                    "type": "simpleCard",
+                    "variant": "h2"
+                  }
+                },
+                {
+                  "itemKey": "faq",
+                  "className": "",
+                  "config": {
+                    "type": "accordionList",
+                    "accordionCtrlsKey": "accordionControls"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/contact-us",
+      "pageKey": "contact-us",
       "rows": [
         {
           "key": "content",
@@ -536,11 +625,11 @@
               "className": "col-12 col-sm-10 col-md-8",
               "items": [
                 {
-                  "itemKey": "contact",
+                  "itemKey": "contact-us",
                   "className": "",
                   "config": {
                     "type": "markdown",
-                    "markdownUrl": "/markdowns/contact.md"
+                    "markdownUrl": "/markdowns/contact-us.md"
                   }
                 }
               ]
@@ -567,6 +656,32 @@
                   "config": {
                     "type": "markdown",
                     "markdownUrl": "/markdowns/privacy.md"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/tos",
+      "pageKey": "tos",
+      "rows": [
+        {
+          "key": "content",
+          "containerClassName": "my-3 min-vh-60",
+          "columns": [
+            {
+              "key": "pCol",
+              "className": "col-12 col-sm-10 col-md-8",
+              "items": [
+                {
+                  "itemKey": "privacyPolicy",
+                  "className": "",
+                  "config": {
+                    "type": "markdown",
+                    "markdownUrl": "/markdowns/tos.md"
                   }
                 }
               ]
@@ -680,102 +795,74 @@
       ]
     },
     {
-      "path": "/accessibility",
-      "pageKey": "accessibility",
-      "rows": [
-        {
-          "key": "content",
-          "containerClassName": "my-3 min-vh-60",
-          "columns": [
-            {
-              "key": "pCol",
-              "className": "col-12 col-sm-10 col-md-8",
-              "items": [
-                {
-                  "itemKey": "accessibility",
-                  "className": "",
-                  "config": {
-                    "type": "markdown",
-                    "markdownUrl": "/markdowns/accessibility.md"
-                  }
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "path": "/disclaimer",
-      "pageKey": "disclaimer",
-      "rows": [
-        {
-          "key": "content",
-          "containerClassName": "my-3 min-vh-60",
-          "columns": [
-            {
-              "key": "pCol",
-              "className": "col-12 col-sm-10 col-md-8",
-              "items": [
-                {
-                  "itemKey": "disclaimer",
-                  "className": "",
-                  "config": {
-                    "type": "markdown",
-                    "markdownUrl": "/markdowns/disclaimer.md"
-                  }
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "path": "/news",
-      "pageKey": "news",
+      "path": "/settings",
+      "hideWhen": "unauth",
       "hideTitleBar": true,
+      "pageKey": "settings",
       "rows": [
         {
-          "key": "content",
+          "key": "mainRow",
           "containerClassName": "my-3 min-vh-60",
           "columns": [
             {
-              "key": "pCol",
-              "className": "col-12 col-sm-10 col-md-8",
+              "key": "settingsCol",
+              "className": "col-12 col-lg-8",
               "items": [
                 {
-                  "itemKey": "accessibility",
+                  "itemKey": "account",
+                  "config": {
+                    "type": "accountSettings",
+                    "allowProfileSettings": true
+                  }
+                },
+                {
+                  "itemKey": "communication",
+                  "config": {
+                    "type": "communicationSettings",
+                    "hideLanguageSelector": true
+                  }
+                },
+                {
+                  "itemKey": "deletion",
                   "className": "",
                   "config": {
-                    "type": "markdown",
-                    "markdownUrl": "/markdowns/news.md"
+                    "type": "deleteAccount"
                   }
                 }
               ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "path": "/info",
-      "pageKey": "info",
-      "rows": [
-        {
-          "key": "content",
-          "containerClassName": "my-3 min-vh-60",
-          "columns": [
+            },
             {
-              "key": "pCol",
-              "className": "col-12 col-sm-10 col-md-8",
+              "key": "helpCol",
+              "className": "col-12 col-lg-4 mt-3 mt-lg-0",
               "items": [
                 {
-                  "itemKey": "info",
-                  "className": "",
+                  "itemKey": "references",
                   "config": {
-                    "type": "markdown",
-                    "markdownUrl": "/markdowns/info.md"
+                    "type": "linkList",
+                    "links": [
+                      {
+                        "linkKey": "faqLink",
+                        "type": "internal",
+                        "value": "/faq"
+                      },
+                      {
+                        "linkKey": "privacyStatementLink",
+                        "type": "internal",
+                        "value": "/privacy"
+                      },
+                      {
+                        "linkKey": "contactLink",
+                        "type": "internal",
+                        "value": "/contact"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "itemKey": "systemInfo",
+                  "config": {
+                    "type": "systemInfo",
+                    "showBrowserInfo": true
                   }
                 }
               ]

@@ -1,12 +1,12 @@
 {
   "columns": [
     {
-      "columnKey": "services",
+      "columnKey": "contacts",
       "items": [
         {
           "type": "internal",
-          "itemKey": "contact",
-          "value": "/contact"
+          "itemKey": "contact-us",
+          "value": "/contact-us"
         },
         {
           "type": "external",
@@ -23,7 +23,7 @@
       ]
     },
     {
-      "columnKey": "about",
+      "columnKey": "legal",
       "items": [
         {
           "type": "internal",
@@ -32,13 +32,8 @@
         },
         {
           "type": "internal",
-          "itemKey": "disclaimer",
-          "value": "/disclaimer"
-        },
-        {
-          "type": "internal",
-          "itemKey": "accessibility",
-          "value": "/accessibility"
+          "itemKey": "tos",
+          "value": "/tos"
         }
       ]
     }

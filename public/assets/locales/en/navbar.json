@@ -1,10 +1,13 @@
 {
   "home": "Home",
   "authhome": "Home",
-  "results": "Results",
-  "about": "About",
-  "faq": "FAQ",
+  "overview": "Overview",
+  "about-us": "About Us",
+  "how-it-works": "How It Works",
+  "reports": "Reports",
+  "resources": "Resources",
   "news": "News",
+  "faq": "FAQ",
   "login": "Login",
   "signup": "Sign up",
   "rightMenu": {
