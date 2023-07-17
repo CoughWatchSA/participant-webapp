@@ -14,6 +14,9 @@
 // Other:
 // ---------------------------------------------
 $enable-rounded: false !default;
+$nav-tabs-link-active-color: white;
+$nav-link-color: white;
+$offcanvas-horizontal-width: 200px;
 
 .captcha-badge-alt {
   color: map-get($theme-colors, 'grey-7');
@@ -39,7 +42,21 @@ $enable-rounded: false !default;
 }
 
 .cwsa-icon {
-  display: none;
+  display: block !important;
+  height: 60px;
+  width: 60px;
+  display: inline;
+  background-image: url('../assets/images/logo.png');
+  background-size: cover;
+}
+
+.offcanvas {
+  .nav-link {
+    min-width: auto !important;
+    .cwsa-icon {
+      margin: 0 auto 20px auto !important;
+    }
+  }
 }
 
 .nav-link {
@@ -62,15 +79,16 @@ $enable-rounded: false !default;
   background-color: white !important;
   &.loading-page {
     .spinner-border {
-      display:none
+      display: none;
     }
   }
 }
 
 .coughwatch {
-  $card-color: white;
-  $nav-tabs-link-active-color: white;
-  $nav-link-color: white;
+
+  h1 {
+    font-size: 2em;
+  }
 
   .navbar {
     div {
@@ -79,8 +97,7 @@ $enable-rounded: false !default;
   }
 
   .nav-link {
-
-    font-size: 1.0em;
+    font-size: 1em;
 
     &.home-link {
       display: flex;
@@ -88,13 +105,8 @@ $enable-rounded: false !default;
       padding-left: 0px;
 
       .cwsa-icon {
-        height: 60px;
-        width: 60px;
-        margin-right: 50px !important;
+        margin: 0 50px 0 0px !important;
         display: inline;
-        background-image: url('../assets/images/logo.png');
-        background-size: cover;
-        margin-right: 100%;
       }
     }
   }
