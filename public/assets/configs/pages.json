@@ -93,44 +93,6 @@
                   }
                 }
               ]
-            },
-            {
-              "key": "newsCardCol",
-              "className": "col-12 col-lg-4 mt-3",
-              "items": [
-                {
-                  "itemKey": "newsCard",
-                  "className": "h-100",
-                  "config": {
-                    "type": "imageCard",
-                    "showActionBtn": false,
-                    "action": {
-                      "type": "navigate",
-                      "value": "/news"
-                    },
-                    "imageSrc": "/images/news.jpg"
-                  }
-                }
-              ]
-            },
-            {
-              "key": "aboutCardCol",
-              "className": "col-12 col-lg-4 mt-3 min-h-478",
-              "items": [
-                {
-                  "itemKey": "aboutCard",
-                  "className": "h-100",
-                  "config": {
-                    "type": "imageCard",
-                    "showActionBtn": false,
-                    "action": {
-                      "type": "navigate",
-                      "value": "/about"
-                    },
-                    "imageSrc": "/images/about.jpg"
-                  }
-                }
-              ]
             }
           ]
         },
@@ -216,14 +178,14 @@
                     "type": "linkList",
                     "links": [
                       {
-                        "linkKey": "resultsLink",
+                        "linkKey": "reportsLink",
                         "type": "internal",
-                        "value": "/results"
+                        "value": "/reports"
                       },
                       {
-                        "linkKey": "aboutLink",
+                        "linkKey": "aboutUsLink",
                         "type": "internal",
-                        "value": "/about"
+                        "value": "/about-us"
                       },
                       {
                         "linkKey": "faqLink",
@@ -534,7 +496,7 @@
           "columns": [
             {
               "key": "mainCol",
-              "className": "col-12 col-lg-8",
+              "className": "col-12 col-lg-10",
               "items": [
                 {
                   "itemKey": "resources",
@@ -560,7 +522,7 @@
           "columns": [
             {
               "key": "pCol",
-              "className": "col-12 col-md-10",
+              "className": "col-12 col-lg-10",
               "items": [
                 {
                   "itemKey": "news",
@@ -622,7 +584,7 @@
           "columns": [
             {
               "key": "pCol",
-              "className": "col-12 col-sm-10 col-md-8",
+              "className": "col-12 col-lg-10",
               "items": [
                 {
                   "itemKey": "contact-us",
@@ -648,7 +610,7 @@
           "columns": [
             {
               "key": "pCol",
-              "className": "col-12 col-sm-10 col-md-8",
+              "className": "col-12 col-lg-10",
               "items": [
                 {
                   "itemKey": "privacyPolicy",
@@ -674,7 +636,7 @@
           "columns": [
             {
               "key": "pCol",
-              "className": "col-12 col-sm-10 col-md-8",
+              "className": "col-12 col-lg-10",
               "items": [
                 {
                   "itemKey": "privacyPolicy",
@@ -700,7 +662,7 @@
           "columns": [
             {
               "key": "pCol",
-              "className": "col-12 col-sm-10 col-md-8",
+              "className": "col-12 col-lg-10",
               "items": [
                 {
                   "itemKey": "studyPolicy",
@@ -726,7 +688,7 @@
           "columns": [
             {
               "key": "pCol",
-              "className": "col-12 col-sm-10 col-md-8",
+              "className": "col-12 col-lg-10",
               "items": [
                 {
                   "itemKey": "studyPolicy",
@@ -752,7 +714,7 @@
           "columns": [
             {
               "key": "pCol",
-              "className": "col-12 col-sm-10 col-md-8",
+              "className": "col-12 col-lg-10",
               "items": [
                 {
                   "itemKey": "studyPolicy",
@@ -778,7 +740,7 @@
           "columns": [
             {
               "key": "pCol",
-              "className": "col-12 col-sm-10 col-md-8",
+              "className": "col-12 col-lg-10",
               "items": [
                 {
                   "itemKey": "studyPolicy",
@@ -853,7 +815,7 @@
                       {
                         "linkKey": "contactLink",
                         "type": "internal",
-                        "value": "/contact"
+                        "value": "/contact-us"
                       }
                     ]
                   }
