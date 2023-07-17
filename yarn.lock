@@ -4151,15 +4151,15 @@ case-sensitive-paths-webpack-plugin@^2.4.0:
   resolved "https://registry.yarnpkg.com/case-sensitive-paths-webpack-plugin/-/case-sensitive-paths-webpack-plugin-2.4.0.tgz#db64066c6422eed2e08cc14b986ca43796dbc6d4"
   integrity sha512-roIFONhcxog0JSSWbvVAh3OocukmSgpqOH6YpMkCvav/ySIV3JKg4Dc8vYtQjYi/UxpNE36r/9v+VqTQqgkYmw==
 
-"case-web-app-core@npm:@influenzanet/case-web-app-core@^v2.7.4-staging.3":
-  version "2.7.4-staging.3"
-  resolved "https://registry.yarnpkg.com/@influenzanet/case-web-app-core/-/case-web-app-core-2.7.4-staging.3.tgz#e100f9252cda942b97ea222486f1e394c4a588d0"
-  integrity sha512-AiE26/9g2bamGxHikE4eC1b3yYnL8I/krqwjuv7cntNhnFCFG5qpTU1PrCMN5v7HFOsXVBgFIhDZjwaUBKW/Nw==
+"case-web-app-core@npm:@influenzanet/case-web-app-core@^v2.7.4-staging.4":
+  version "2.7.4-staging.4"
+  resolved "https://registry.yarnpkg.com/@influenzanet/case-web-app-core/-/case-web-app-core-2.7.4-staging.4.tgz#23b449c267f7a656ad9a920b4418af6b69ec398f"
+  integrity sha512-L96r2DpeqpbveQ/jNtJm1J6yhOEik0/eRWybVbAFz8N+aVfE6i/E32Pel+Td7yvTclRkyneu1S63asxgd7GgAg==
 
-"case-web-ui@npm:@influenzanet/case-web-ui@^v1.14.8-staging.2":
-  version "1.14.8-staging.2"
-  resolved "https://registry.yarnpkg.com/@influenzanet/case-web-ui/-/case-web-ui-1.14.8-staging.2.tgz#86cde0d11db7485d0af2017d96fcf3d604393a8c"
-  integrity sha512-8pQ6d3nyFUQhFIByQq2kk9T8wzxUjz0xfr9zvvcJ6QKqhJSpPYuErvY1Da119hYBTcNqDCx8ZBHDIqCboBPZcA==
+"case-web-ui@npm:@influenzanet/case-web-ui@^v1.14.8-staging.3":
+  version "1.14.8-staging.3"
+  resolved "https://registry.yarnpkg.com/@influenzanet/case-web-ui/-/case-web-ui-1.14.8-staging.3.tgz#c1fc0db35892203bb4d4aa7393bca5dce8810732"
+  integrity sha512-dgomMNZvphBwQRcuefLZ17ZWqxINxgzIeryQ9oOh2yQuRKHIn+qd94emZGyI9n4KDKZPSTswkCqDjl+A2mtlYA==
   dependencies:
     "@fortawesome/fontawesome-free" "^5.15.4"
 
