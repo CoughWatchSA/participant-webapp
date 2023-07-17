@@ -1,15 +1,14 @@
 {
-  "services": {
-    "title": "Services",
-    "contact": "Contact",
+  "contacts": {
+    "title": "Contacts",
+    "contact-us": "Contact Us",
     "twitter": "Follow us on Twitter",
     "facebook": "Follow us on Facebook"
   },
-  "about": {
-    "title": "About this page",
+  "legal": {
+    "title": "Legal Disclaimer",
     "privacy": "Privacy Statement",
-    "disclaimer": "Disclaimer",
-    "accessibility": "Accessibility"
+    "tos": "Terms and Conditions"
   },
   "languages": {
     "title": "Languages",

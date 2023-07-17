@@ -6,34 +6,51 @@
       "hideWhen": "auth",
       "itemKey": "home",
       "url": "/welcome",
-      "iconClass": "fas fa-home"
+      "iconClass": "cwsa-icon",
+      "className": "home-link"
     },
     {
       "type": "internal",
       "hideWhen": "unauth",
       "itemKey": "authhome",
       "url": "/home",
-      "iconClass": "fas fa-home"
+      "iconClass": "cwsa-icon",
+      "className": "home-link"
     },
     {
       "type": "internal",
-      "itemKey": "about",
-      "url": "/about"
+      "itemKey": "overview",
+      "url": "/overview"
     },
     {
       "type": "internal",
-      "itemKey": "faq",
-      "url": "/faq"
+      "itemKey": "about-us",
+      "url": "/about-us"
     },
     {
       "type": "internal",
-      "itemKey": "results",
-      "url": "/results"
+      "itemKey": "how-it-works",
+      "url": "/how-it-works"
+    },
+    {
+      "type": "internal",
+      "itemKey": "reports",
+      "url": "/reports"
+    },
+    {
+      "type": "internal",
+      "itemKey": "resources",
+      "url": "/resources"
     },
     {
       "type": "internal",
       "itemKey": "news",
       "url": "/news"
+    },
+    {
+      "type": "internal",
+      "itemKey": "faq",
+      "url": "/faq"
     }
   ],
   "rightItems": [

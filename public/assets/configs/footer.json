@@ -1,12 +1,28 @@
 {
   "columns": [
     {
-      "columnKey": "services",
+      "columnKey": "legal",
       "items": [
         {
           "type": "internal",
-          "itemKey": "contact",
-          "value": "/contact"
+          "itemKey": "privacy",
+          "value": "/privacy"
+        },
+        {
+          "type": "internal",
+          "itemKey": "tos",
+          "value": "/tos"
+        }
+      ]
+    },
+    {
+      "columnKey": "contacts",
+      "classNameOverride": "col-12 col-sm-10 col-md-8 col-lg-4 col-xl-3 mt-3 text-white ms-lg-auto",
+      "items": [
+        {
+          "type": "internal",
+          "itemKey": "contact-us",
+          "value": "/contact-us"
         },
         {
           "type": "external",
@@ -19,26 +35,6 @@
           "itemKey": "facebook",
           "value": "about:blank",
           "iconClass": "fab fa-facebook"
-        }
-      ]
-    },
-    {
-      "columnKey": "about",
-      "items": [
-        {
-          "type": "internal",
-          "itemKey": "privacy",
-          "value": "/privacy"
-        },
-        {
-          "type": "internal",
-          "itemKey": "disclaimer",
-          "value": "/disclaimer"
-        },
-        {
-          "type": "internal",
-          "itemKey": "accessibility",
-          "value": "/accessibility"
         }
       ]
     }

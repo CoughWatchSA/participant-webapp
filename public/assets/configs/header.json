@@ -6,13 +6,13 @@
       "altKey": "logoAlt",
       "sm": {
         "url": "/images/logo.png",
-        "className": "py-2",
-        "width": 50
+        "className": "py-2 d-none",
+        "width": 0
       },
       "lg": {
-        "url": "/images/logo.png",
+        "url": "/images/logo_large.png",
         "className": "py-2",
-        "width": 50
+        "width": 300
       }
     },
     "useLanguageSelector": false

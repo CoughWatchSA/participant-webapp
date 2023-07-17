@@ -10,6 +10,7 @@
       "path": "/welcome",
       "pageKey": "landing",
       "hideWhen": "auth",
+      "hideTitleBar": true,
       "rows": [
         {
           "key": "teaserImage",
@@ -29,7 +30,7 @@
                       "height": 400
                     },
                     "textBox": {
-                      "className": "col col-md-6 col-lg-4 offset-0 offset-lg-1"
+                      "className": "col col-md-6 col-lg-4 offset-0 offset-lg-1 teaser-text"
                     }
                   }
                 }
@@ -64,7 +65,7 @@
                   "className": "h-100",
                   "config": {
                     "type": "imageCard",
-                    "showActionBtn": true,
+                    "showActionBtn": false,
                     "action": {
                       "type": "navigate",
                       "value": "/results"
@@ -83,69 +84,12 @@
                   "className": "h-100",
                   "config": {
                     "type": "imageCard",
-                    "showActionBtn": true,
+                    "showActionBtn": false,
                     "action": {
                       "type": "openDialog",
                       "value": "signup"
                     },
                     "imageSrc": "/images/participate.jpg"
-                  }
-                }
-              ]
-            },
-            {
-              "key": "newsCardCol",
-              "className": "col-12 col-lg-4 mt-3",
-              "items": [
-                {
-                  "itemKey": "newsCard",
-                  "className": "h-100",
-                  "config": {
-                    "type": "imageCard",
-                    "showActionBtn": true,
-                    "action": {
-                      "type": "navigate",
-                      "value": "/news"
-                    },
-                    "imageSrc": "/images/news.jpg"
-                  }
-                }
-              ]
-            },
-            {
-              "key": "aboutCardCol",
-              "className": "col-12 col-lg-4 mt-3 min-h-478",
-              "items": [
-                {
-                  "itemKey": "aboutCard",
-                  "className": "h-100",
-                  "config": {
-                    "type": "imageCard",
-                    "showActionBtn": true,
-                    "action": {
-                      "type": "navigate",
-                      "value": "/about"
-                    },
-                    "imageSrc": "/images/about.jpg"
-                  }
-                }
-              ]
-            },
-            {
-              "key": "infoCard",
-              "className": "col-12 col-lg-4 mt-3 min-h-478",
-              "items": [
-                {
-                  "itemKey": "infoCard",
-                  "className": "h-100",
-                  "config": {
-                    "type": "imageCard",
-                    "showActionBtn": true,
-                    "action": {
-                      "type": "navigate",
-                      "value": "/info"
-                    },
-                    "imageSrc": "/images/info.jpg"
                   }
                 }
               ]
@@ -176,34 +120,9 @@
       ]
     },
     {
-      "path": "/results",
-      "pageKey": "results",
-      "rows": [
-        {
-          "key": "contentRow",
-          "containerClassName": "my-3 min-vh-60",
-          "columns": [
-            {
-              "key": "contentCol",
-              "className": "col-12 col-lg-8",
-              "items": [
-                {
-                  "itemKey": "results",
-                  "config": {
-                    "type": "markdown",
-                    "markdownUrl": "markdowns/results.md",
-                    "flavor": "chart-renderer"
-                  }
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
       "path": "/home",
       "hideWhen": "unauth",
+      "hideTitleBar": true,
       "pageKey": "landing",
       "rows": [
         {
@@ -224,7 +143,7 @@
                       "height": 400
                     },
                     "textBox": {
-                      "className": "col col-md-6 col-lg-4 offset-0 offset-lg-1"
+                      "className": "col col-md-6 col-lg-4 offset-0 offset-lg-1 teaser-text"
                     }
                   }
                 }
@@ -259,14 +178,14 @@
                     "type": "linkList",
                     "links": [
                       {
-                        "linkKey": "resultsLink",
+                        "linkKey": "reportsLink",
                         "type": "internal",
-                        "value": "/results"
+                        "value": "/reports"
                       },
                       {
-                        "linkKey": "aboutLink",
+                        "linkKey": "aboutUsLink",
                         "type": "internal",
-                        "value": "/about"
+                        "value": "/about-us"
                       },
                       {
                         "linkKey": "faqLink",
@@ -301,8 +220,546 @@
       ]
     },
     {
+      "path": "/overview",
+      "pageKey": "overview",
+      "hideTitleBar": true,
+      "rows": [
+        {
+          "key": "teaserImage",
+          "fullWidth": true,
+          "columns": [
+            {
+              "key": "ti",
+              "className": "p-0",
+              "items": []
+            }
+          ]
+        },
+        {
+          "key": "content",
+          "fullWidth": false,
+          "containerClassName": "my-3 min-vh-60",
+          "columns": [
+            {
+              "key": "mainCol",
+              "className": "col-12 col-lg-8",
+              "items": [
+                {
+                  "itemKey": "overview",
+                  "config": {
+                    "type": "markdown",
+                    "markdownUrl": "/markdowns/overview.md"
+                  }
+                }
+              ]
+            },
+            {
+              "key": "cardSignupCol",
+              "className": "col-12 col-lg-4 mt-3 mt-lg-0",
+              "items": [
+                {
+                  "itemKey": "signupCard",
+                  "hideWhen": "auth",
+                  "className": "",
+                  "config": {
+                    "type": "imageCard",
+                    "action": {
+                      "type": "openDialog",
+                      "value": "signup"
+                    },
+                    "imageSrc": "/images/participate.jpg",
+                    "showActionBtn": false
+                  }
+                },
+                {
+                  "itemKey": "surveyCard",
+                  "hideWhen": "unauth",
+                  "className": "",
+                  "config": {
+                    "type": "imageCard",
+                    "action": {
+                      "type": "navigate",
+                      "value": "/home"
+                    },
+                    "imageSrc": "/images/survey.jpg",
+                    "showActionBtn": false
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/about-us",
+      "pageKey": "about-us",
+      "hideTitleBar": true,
+      "rows": [
+        {
+          "key": "teaserImage",
+          "fullWidth": true,
+          "columns": [
+            {
+              "key": "ti",
+              "className": "p-0",
+              "items": []
+            }
+          ]
+        },
+        {
+          "key": "content",
+          "fullWidth": false,
+          "containerClassName": "my-3 min-vh-60",
+          "columns": [
+            {
+              "key": "mainCol",
+              "className": "col-12 col-lg-8",
+              "items": [
+                {
+                  "itemKey": "about-us",
+                  "config": {
+                    "type": "markdown",
+                    "markdownUrl": "/markdowns/about-us.md"
+                  }
+                }
+              ]
+            },
+            {
+              "key": "cardSignupCol",
+              "className": "col-12 col-lg-4 mt-3 mt-lg-0",
+              "items": [
+                {
+                  "itemKey": "signupCard",
+                  "hideWhen": "auth",
+                  "className": "",
+                  "config": {
+                    "type": "imageCard",
+                    "action": {
+                      "type": "openDialog",
+                      "value": "signup"
+                    },
+                    "imageSrc": "/images/participate.jpg",
+                    "showActionBtn": false
+                  }
+                },
+                {
+                  "itemKey": "surveyCard",
+                  "hideWhen": "unauth",
+                  "className": "",
+                  "config": {
+                    "type": "imageCard",
+                    "action": {
+                      "type": "navigate",
+                      "value": "/home"
+                    },
+                    "imageSrc": "/images/survey.jpg",
+                    "showActionBtn": false
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/how-it-works",
+      "pageKey": "how-it-works",
+      "hideTitleBar": true,
+      "rows": [
+        {
+          "key": "teaserImage",
+          "fullWidth": true,
+          "columns": [
+            {
+              "key": "ti",
+              "className": "p-0",
+              "items": []
+            }
+          ]
+        },
+        {
+          "key": "content",
+          "fullWidth": false,
+          "containerClassName": "my-3 min-vh-60",
+          "columns": [
+            {
+              "key": "mainCol",
+              "className": "col-12 col-lg-8",
+              "items": [
+                {
+                  "itemKey": "how-it-works",
+                  "config": {
+                    "type": "markdown",
+                    "markdownUrl": "/markdowns/how-it-works.md"
+                  }
+                }
+              ]
+            },
+            {
+              "key": "cardSignupCol",
+              "className": "col-12 col-lg-4 mt-3 mt-lg-0",
+              "items": [
+                {
+                  "itemKey": "signupCard",
+                  "hideWhen": "auth",
+                  "className": "",
+                  "config": {
+                    "type": "imageCard",
+                    "action": {
+                      "type": "openDialog",
+                      "value": "signup"
+                    },
+                    "imageSrc": "/images/participate.jpg",
+                    "showActionBtn": false
+                  }
+                },
+                {
+                  "itemKey": "surveyCard",
+                  "hideWhen": "unauth",
+                  "className": "",
+                  "config": {
+                    "type": "imageCard",
+                    "action": {
+                      "type": "navigate",
+                      "value": "/home"
+                    },
+                    "imageSrc": "/images/survey.jpg",
+                    "showActionBtn": false
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/reports",
+      "pageKey": "reports",
+      "hideTitleBar": true,
+      "rows": [
+        {
+          "key": "teaserImage",
+          "fullWidth": true,
+          "columns": [
+            {
+              "key": "ti",
+              "className": "p-0",
+              "items": []
+            }
+          ]
+        },
+        {
+          "key": "content",
+          "fullWidth": false,
+          "containerClassName": "my-3 min-vh-60",
+          "columns": [
+            {
+              "key": "mainCol",
+              "className": "col-12 col-lg-8",
+              "items": [
+                {
+                  "itemKey": "reports",
+                  "config": {
+                    "type": "markdown",
+                    "markdownUrl": "/markdowns/reports.md"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/resources",
+      "pageKey": "resources",
+      "hideTitleBar": true,
+      "rows": [
+        {
+          "key": "teaserImage",
+          "fullWidth": true,
+          "columns": [
+            {
+              "key": "ti",
+              "className": "p-0",
+              "items": []
+            }
+          ]
+        },
+        {
+          "key": "content",
+          "fullWidth": false,
+          "containerClassName": "my-3 min-vh-60",
+          "columns": [
+            {
+              "key": "mainCol",
+              "className": "col-12 col-lg-10",
+              "items": [
+                {
+                  "itemKey": "resources",
+                  "config": {
+                    "type": "markdown",
+                    "markdownUrl": "/markdowns/resources.md"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/news",
+      "pageKey": "news",
+      "hideTitleBar": true,
+      "rows": [
+        {
+          "key": "content",
+          "containerClassName": "my-3 min-vh-60",
+          "columns": [
+            {
+              "key": "pCol",
+              "className": "col-12 col-lg-10",
+              "items": [
+                {
+                  "itemKey": "news",
+                  "className": "",
+                  "config": {
+                    "type": "markdown",
+                    "markdownUrl": "/markdowns/news.md"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/faq",
+      "pageKey": "faq",
+      "hideTitleBar": true,
+      "rows": [
+        {
+          "key": "content",
+          "fullWidth": false,
+          "containerClassName": "my-3 min-vh-60",
+          "columns": [
+            {
+              "key": "mainCol",
+              "className": "col-12 col-lg-10",
+              "items": [
+                {
+                  "itemKey": "topFaq",
+                  "className": "",
+                  "config": {
+                    "type": "simpleCard",
+                    "variant": "h2"
+                  }
+                },
+                {
+                  "itemKey": "faq",
+                  "className": "",
+                  "config": {
+                    "type": "accordionList",
+                    "accordionCtrlsKey": "accordionControls"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/contact-us",
+      "pageKey": "contact-us",
+      "rows": [
+        {
+          "key": "content",
+          "containerClassName": "my-3 min-vh-60",
+          "columns": [
+            {
+              "key": "pCol",
+              "className": "col-12 col-lg-10",
+              "items": [
+                {
+                  "itemKey": "contact-us",
+                  "className": "",
+                  "config": {
+                    "type": "markdown",
+                    "markdownUrl": "/markdowns/contact-us.md"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/privacy",
+      "pageKey": "privacy",
+      "rows": [
+        {
+          "key": "content",
+          "containerClassName": "my-3 min-vh-60",
+          "columns": [
+            {
+              "key": "pCol",
+              "className": "col-12 col-lg-10",
+              "items": [
+                {
+                  "itemKey": "privacyPolicy",
+                  "className": "",
+                  "config": {
+                    "type": "markdown",
+                    "markdownUrl": "/markdowns/privacy.md"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/tos",
+      "pageKey": "tos",
+      "rows": [
+        {
+          "key": "content",
+          "containerClassName": "my-3 min-vh-60",
+          "columns": [
+            {
+              "key": "pCol",
+              "className": "col-12 col-lg-10",
+              "items": [
+                {
+                  "itemKey": "privacyPolicy",
+                  "className": "",
+                  "config": {
+                    "type": "markdown",
+                    "markdownUrl": "/markdowns/tos.md"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/study-consent",
+      "pageKey": "study-consent",
+      "rows": [
+        {
+          "key": "content",
+          "containerClassName": "my-3 min-vh-60",
+          "columns": [
+            {
+              "key": "pCol",
+              "className": "col-12 col-lg-10",
+              "items": [
+                {
+                  "itemKey": "studyPolicy",
+                  "className": "",
+                  "config": {
+                    "type": "markdown",
+                    "markdownUrl": "/consent/study.md"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/study-consent-parental",
+      "pageKey": "study-consent-parental",
+      "rows": [
+        {
+          "key": "content",
+          "containerClassName": "my-3 min-vh-60",
+          "columns": [
+            {
+              "key": "pCol",
+              "className": "col-12 col-lg-10",
+              "items": [
+                {
+                  "itemKey": "studyPolicy",
+                  "className": "",
+                  "config": {
+                    "type": "markdown",
+                    "markdownUrl": "/consent/study-parental.md"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/study-consent-7-11",
+      "pageKey": "study-consent-7-11",
+      "rows": [
+        {
+          "key": "content",
+          "containerClassName": "my-3 min-vh-60",
+          "columns": [
+            {
+              "key": "pCol",
+              "className": "col-12 col-lg-10",
+              "items": [
+                {
+                  "itemKey": "studyPolicy",
+                  "className": "",
+                  "config": {
+                    "type": "markdown",
+                    "markdownUrl": "/consent/study-7-11.md"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/study-consent-12-17",
+      "pageKey": "study-consent-12-17",
+      "rows": [
+        {
+          "key": "content",
+          "containerClassName": "my-3 min-vh-60",
+          "columns": [
+            {
+              "key": "pCol",
+              "className": "col-12 col-lg-10",
+              "items": [
+                {
+                  "itemKey": "studyPolicy",
+                  "className": "",
+                  "config": {
+                    "type": "markdown",
+                    "markdownUrl": "/consent/study-12-17.md"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "path": "/settings",
       "hideWhen": "unauth",
+      "hideTitleBar": true,
       "pageKey": "settings",
       "rows": [
         {
@@ -358,7 +815,7 @@
                       {
                         "linkKey": "contactLink",
                         "type": "internal",
-                        "value": "/contact"
+                        "value": "/contact-us"
                       }
                     ]
                   }
@@ -368,406 +825,6 @@
                   "config": {
                     "type": "systemInfo",
                     "showBrowserInfo": true
-                  }
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "path": "/faq",
-      "pageKey": "faq",
-      "rows": [
-        {
-          "key": "content",
-          "fullWidth": false,
-          "containerClassName": "my-3 min-vh-60",
-          "columns": [
-            {
-              "key": "mainCol",
-              "className": "col-12 col-lg-8",
-              "items": [
-                {
-                  "itemKey": "topFaq",
-                  "className": "",
-                  "config": {
-                    "type": "simpleCard",
-                    "variant": "h2"
-                  }
-                },
-                {
-                  "itemKey": "faq",
-                  "className": "",
-                  "config": {
-                    "type": "accordionList",
-                    "accordionCtrlsKey": "accordionControls"
-                  }
-                }
-              ]
-            },
-            {
-              "key": "cardSignupCol",
-              "className": "col-12 col-lg-4 mt-3 mt-lg-0",
-              "items": [
-                {
-                  "itemKey": "signupCard",
-                  "hideWhen": "auth",
-                  "className": "",
-                  "config": {
-                    "type": "imageCard",
-                    "action": {
-                      "type": "openDialog",
-                      "value": "signup"
-                    },
-                    "imageSrc": "/images/participate.jpg",
-                    "showActionBtn": true
-                  }
-                },
-                {
-                  "itemKey": "surveyCard",
-                  "hideWhen": "unauth",
-                  "className": "",
-                  "config": {
-                    "type": "imageCard",
-                    "action": {
-                      "type": "navigate",
-                      "value": "/home"
-                    },
-                    "imageSrc": "/images/survey.jpg",
-                    "showActionBtn": true
-                  }
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "path": "/about",
-      "pageKey": "about",
-      "rows": [
-        {
-          "key": "teaserImage",
-          "fullWidth": true,
-          "columns": [
-            {
-              "key": "ti",
-              "className": "p-0",
-              "items": []
-            }
-          ]
-        },
-        {
-          "key": "content",
-          "fullWidth": false,
-          "containerClassName": "my-3 min-vh-60",
-          "columns": [
-            {
-              "key": "mainCol",
-              "className": "col-12 col-lg-8",
-              "items": [
-                {
-                  "itemKey": "aboutPolicy",
-                  "config": {
-                    "type": "markdown",
-                    "markdownUrl": "/markdowns/about.md"
-                  }
-                }
-              ]
-            },
-            {
-              "key": "cardSignupCol",
-              "className": "col-12 col-lg-4 mt-3 mt-lg-0",
-              "items": [
-                {
-                  "itemKey": "signupCard",
-                  "hideWhen": "auth",
-                  "className": "",
-                  "config": {
-                    "type": "imageCard",
-                    "action": {
-                      "type": "openDialog",
-                      "value": "signup"
-                    },
-                    "imageSrc": "/images/participate.jpg",
-                    "showActionBtn": true
-                  }
-                },
-                {
-                  "itemKey": "surveyCard",
-                  "hideWhen": "unauth",
-                  "className": "",
-                  "config": {
-                    "type": "imageCard",
-                    "action": {
-                      "type": "navigate",
-                      "value": "/home"
-                    },
-                    "imageSrc": "/images/survey.jpg",
-                    "showActionBtn": true
-                  }
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "path": "/contact",
-      "pageKey": "contact",
-      "rows": [
-        {
-          "key": "content",
-          "containerClassName": "my-3 min-vh-60",
-          "columns": [
-            {
-              "key": "pCol",
-              "className": "col-12 col-sm-10 col-md-8",
-              "items": [
-                {
-                  "itemKey": "contact",
-                  "className": "",
-                  "config": {
-                    "type": "markdown",
-                    "markdownUrl": "/markdowns/contact.md"
-                  }
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "path": "/privacy",
-      "pageKey": "privacy",
-      "rows": [
-        {
-          "key": "content",
-          "containerClassName": "my-3 min-vh-60",
-          "columns": [
-            {
-              "key": "pCol",
-              "className": "col-12 col-sm-10 col-md-8",
-              "items": [
-                {
-                  "itemKey": "privacyPolicy",
-                  "className": "",
-                  "config": {
-                    "type": "markdown",
-                    "markdownUrl": "/markdowns/privacy.md"
-                  }
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "path": "/study-consent",
-      "pageKey": "study-consent",
-      "rows": [
-        {
-          "key": "content",
-          "containerClassName": "my-3 min-vh-60",
-          "columns": [
-            {
-              "key": "pCol",
-              "className": "col-12 col-sm-10 col-md-8",
-              "items": [
-                {
-                  "itemKey": "studyPolicy",
-                  "className": "",
-                  "config": {
-                    "type": "markdown",
-                    "markdownUrl": "/consent/study.md"
-                  }
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "path": "/study-consent-parental",
-      "pageKey": "study-consent-parental",
-      "rows": [
-        {
-          "key": "content",
-          "containerClassName": "my-3 min-vh-60",
-          "columns": [
-            {
-              "key": "pCol",
-              "className": "col-12 col-sm-10 col-md-8",
-              "items": [
-                {
-                  "itemKey": "studyPolicy",
-                  "className": "",
-                  "config": {
-                    "type": "markdown",
-                    "markdownUrl": "/consent/study-parental.md"
-                  }
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "path": "/study-consent-7-11",
-      "pageKey": "study-consent-7-11",
-      "rows": [
-        {
-          "key": "content",
-          "containerClassName": "my-3 min-vh-60",
-          "columns": [
-            {
-              "key": "pCol",
-              "className": "col-12 col-sm-10 col-md-8",
-              "items": [
-                {
-                  "itemKey": "studyPolicy",
-                  "className": "",
-                  "config": {
-                    "type": "markdown",
-                    "markdownUrl": "/consent/study-7-11.md"
-                  }
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "path": "/study-consent-12-17",
-      "pageKey": "study-consent-12-17",
-      "rows": [
-        {
-          "key": "content",
-          "containerClassName": "my-3 min-vh-60",
-          "columns": [
-            {
-              "key": "pCol",
-              "className": "col-12 col-sm-10 col-md-8",
-              "items": [
-                {
-                  "itemKey": "studyPolicy",
-                  "className": "",
-                  "config": {
-                    "type": "markdown",
-                    "markdownUrl": "/consent/study-12-17.md"
-                  }
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "path": "/accessibility",
-      "pageKey": "accessibility",
-      "rows": [
-        {
-          "key": "content",
-          "containerClassName": "my-3 min-vh-60",
-          "columns": [
-            {
-              "key": "pCol",
-              "className": "col-12 col-sm-10 col-md-8",
-              "items": [
-                {
-                  "itemKey": "accessibility",
-                  "className": "",
-                  "config": {
-                    "type": "markdown",
-                    "markdownUrl": "/markdowns/accessibility.md"
-                  }
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "path": "/disclaimer",
-      "pageKey": "disclaimer",
-      "rows": [
-        {
-          "key": "content",
-          "containerClassName": "my-3 min-vh-60",
-          "columns": [
-            {
-              "key": "pCol",
-              "className": "col-12 col-sm-10 col-md-8",
-              "items": [
-                {
-                  "itemKey": "disclaimer",
-                  "className": "",
-                  "config": {
-                    "type": "markdown",
-                    "markdownUrl": "/markdowns/disclaimer.md"
-                  }
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "path": "/news",
-      "pageKey": "news",
-      "rows": [
-        {
-          "key": "content",
-          "containerClassName": "my-3 min-vh-60",
-          "columns": [
-            {
-              "key": "pCol",
-              "className": "col-12 col-sm-10 col-md-8",
-              "items": [
-                {
-                  "itemKey": "accessibility",
-                  "className": "",
-                  "config": {
-                    "type": "markdown",
-                    "markdownUrl": "/markdowns/news.md"
-                  }
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "path": "/info",
-      "pageKey": "info",
-      "rows": [
-        {
-          "key": "content",
-          "containerClassName": "my-3 min-vh-60",
-          "columns": [
-            {
-              "key": "pCol",
-              "className": "col-12 col-sm-10 col-md-8",
-              "items": [
-                {
-                  "itemKey": "info",
-                  "className": "",
-                  "config": {
-                    "type": "markdown",
-                    "markdownUrl": "/markdowns/info.md"
                   }
                 }
               ]
