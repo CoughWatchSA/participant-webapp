@@ -41,6 +41,12 @@ $offcanvas-horizontal-width: 200px;
   }
 }
 
+// NOTE: fix slider on firefox
+.form-range {
+  z-index: 1;
+  position: relative;
+}
+
 .cwsa-icon {
   display: block !important;
   height: 60px;
