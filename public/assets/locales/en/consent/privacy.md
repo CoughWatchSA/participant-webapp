@@ -1,1 +1,1 @@
-Sign up Privacy consent goes here
+../markdowns/privacy.md
