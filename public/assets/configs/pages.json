@@ -554,7 +554,7 @@
               "items": [
                 {
                   "itemKey": "topFaq",
-                  "className": "",
+                  "className": "mb-2",
                   "config": {
                     "type": "simpleCard",
                     "variant": "h2"

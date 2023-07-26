@@ -6,7 +6,7 @@
   },
   "topFaq": {
     "title": "Frequently asked questions",
-    "content": ""
+    "content": "Read our FAQ here or download our [poster](assets/images/FAQ.pdf)"
   },
   "signupCard": {
     "imageAlt": "Participate image",
@@ -39,4 +39,3 @@
     }
   ]
 }
- 
