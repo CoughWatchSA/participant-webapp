@@ -36,7 +36,7 @@
     {
       "title": "Where is my data stored?",
       "content": "After being anonymised, data is stored in a secure data layer on our servers (Google Cloud) and only the study team will have access to your data in an anonymised manner"
-    },
+    }
   ]
 }
  
