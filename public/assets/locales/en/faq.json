@@ -22,8 +22,21 @@
   },
   "faq": [
     {
-      "title": "Question text?",
-      "content": "Answer text"
-    }
+      "title": "What is CoughWatchSA all about?",
+      "content": "CoughWatchSA is a web application designed for monitoring respiratory illness in South Africa. Anyone in South Africa can take part. Participants are asked to report on a weeklybasis if they have any symptoms or not inorder to identify possible new spreads of u (and other respiratory infections). For more information about CWSA, and what it involves, see the project"
+    },
+    {
+      "title": "How should I choose a username and password?",
+      "content": "You will need a working email address in order to register which will serve as your username and a chosen password. If you have forgotten your password or username, you can request a new password through the web platform."
+    },
+    {
+      "title": "Is all data anonymous? Who can see the information I send?",
+      "content": "Yes. All data is completely anonymised upon submission, it will not be possible to link the information provided to any individual or household."
+    },
+    {
+      "title": "Where is my data stored?",
+      "content": "After being anonymised, data is stored in a secure data layer on our servers (Google Cloud) and only the study team will have access to your data in an anonymised manner"
+    },
   ]
 }
+ 
