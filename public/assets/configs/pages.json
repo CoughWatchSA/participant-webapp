@@ -518,18 +518,62 @@
       "rows": [
         {
           "key": "content",
-          "containerClassName": "my-3 min-vh-60",
+          "fullWidth": false,
+          "containerClassName": "my-3",
           "columns": [
             {
-              "key": "pCol",
-              "className": "col-12 col-lg-10",
+              "key": "mainCol",
+              "className": "col-12 col-lg-12",
               "items": [
                 {
-                  "itemKey": "news",
-                  "className": "",
+                  "itemKey": "news-md",
                   "config": {
                     "type": "markdown",
                     "markdownUrl": "/markdowns/news.md"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": "content",
+          "containerClassName": "my-3 min-vh-60",
+          "columns": [
+            {
+              "key": "news-col-2",
+              "className": "col-12 col-lg-6 mt-3 mt-lg-0",
+              "items": [
+                {
+                  "itemKey": "news-2",
+                  "className": "",
+                  "config": {
+                    "type": "imageCard",
+                    "action": {
+                      "type": "navigateExternal",
+                      "value": "https://www.gavi.org/vaccineswork/coughwatch-meet-south-african-researchers-tracking-covid-19"
+                    },
+                    "imageSrc": "https://www.gavi.org/sites/default/files/vaccineswork/2022/Header/IMG_20220220_213151_h1.jpg",
+                    "showActionBtn": false
+                  }
+                }
+              ]
+            },
+            {
+              "key": "news-col-1",
+              "className": "col-12 col-lg-6 mt-3 mt-lg-0",
+              "items": [
+                {
+                  "itemKey": "news-1",
+                  "className": "",
+                  "config": {
+                    "type": "imageCard",
+                    "action": {
+                      "type": "navigateExternal",
+                      "value": "https://theconversation.com/tracking-symptoms-of-respiratory-diseases-online-can-give-a-picture-of-community-health-177939?fbclid=IwAR3VWKzfL05YWJ2VJKTTVw5xQRpSgH5ZTbAxWe1BV71F8VSW05N3oiYBpJc"
+                    },
+                    "imageSrc": "https://images.theconversation.com/files/449807/original/file-20220303-15-936lnt.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=926&fit=clip",
+                    "showActionBtn": false
                   }
                 }
               ]
