@@ -29,11 +29,6 @@
     },
     {
       "type": "internal",
-      "itemKey": "how-it-works",
-      "url": "/how-it-works"
-    },
-    {
-      "type": "internal",
       "itemKey": "reports",
       "url": "/reports"
     },
