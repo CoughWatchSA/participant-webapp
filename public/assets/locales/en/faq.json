@@ -6,7 +6,7 @@
   },
   "topFaq": {
     "title": "Frequently asked questions",
-    "content": "Read our FAQ here or download our [poster](assets/images/FAQ.pdf)"
+    "content": "Read our FAQ here or download our <a href=\"assets/images/FAQ.pdf\" target=\"_blank\">poster</a>"
   },
   "signupCard": {
     "imageAlt": "Participate image",
@@ -37,7 +37,7 @@
       "title": "Where is my data stored?",
       "content": "After being anonymised, data is stored in a secure data layer on our servers (Google Cloud) and only the study team will have access to your data in an anonymised manner"
     },
-     {
+    {
       "title": "Who are you gathering data for and who benefits?",
       "content": "Two groups bene t from this information immediately. First, citizens like yourself, who gain access to valuable information about respiratory cases in your community. This information allows you to prepare and react quickly to risks in your community. Second, the National Institute for Communicable Diseases, for the purpose of preparation, outbreak detection, and targeted response"
     },
@@ -45,15 +45,15 @@
       "title": "Can I invite my colleagues, peers of family?",
       "content": "Yes, please invite as many others as you can. More data means more powerful models and better outputs and results"
     },
-     {
+    {
       "title": "Can I answer the survey for other people?",
       "content": "Yes, only on behalf of your children if you are the parent or legal guardian. You will register using a valid email account and through your account, you can add other pro les which will be recognised as users linked to your account"
     },
-     {
+    {
       "title": "What if I am away or unable to answer the survey for some time? Will I be disqualified?",
       "content": "No, please just resume answering the survey as soon as possible. The survey links are sent via email so you can complete these anywhere in the world"
     },
-     {
+    {
       "title": "Can I change my email address?",
       "content": "No, accounts are linked directly to an email. If you to change your email you would need to create a new account and unsubscribe from the current account."
     },
@@ -69,23 +69,23 @@
       "title": "Who is eligible to participate in this platform?",
       "content": "Anyone over the age of 18 can participate today and they can now add pro les for their children"
     },
-     {
+    {
       "title": "I think I have COVID-19, will this platform help me?",
       "content": "No, this platform is for measuring trends and potential problem areas across the population. If you think you have COVID-19 and need medical assistance, please call visit your nearest clinic or consult your doctor."
     },
-     {
+    {
       "title": "If I move to another area, will I be able to update my postal code?",
       "content": "Yes, you will be able to update your postal code through the intake questionnaire."
     },
-     {
+    {
       "title": "What is ILI?",
       "content": "ILI stands for influenza-like illness"
     },
-      {
+    {
       "title": "I live in the rural areas, will I be able to participate?",
       "content": "Yes, the accuracy of the forecasting depends on having input from a wide range of people - in terms of age, gender, health, and location"
     },
-      {
+    {
       "title": "Should I report on my symptoms when I am away from home?",
       "content": "Generally, Yes. We often don't know exactly where we were infected, so if in doubt report what you have. Also, we're trying to get people's infection pro les over the whole season. However, when you are moving abroad, we would ask you to stop completing the survey."
     }
