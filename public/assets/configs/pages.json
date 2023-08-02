@@ -470,7 +470,7 @@
           "columns": [
             {
               "key": "news-col-2",
-              "className": "col-12 col-lg-6 mt-3 mt-lg-0",
+              "className": "col-12 col-lg-5 mt-3 mt-lg-0",
               "items": [
                 {
                   "itemKey": "news-2",
@@ -489,7 +489,7 @@
             },
             {
               "key": "news-col-1",
-              "className": "col-12 col-lg-6 mt-3 mt-lg-0",
+              "className": "col-12 col-lg-5 mt-3 mt-lg-0",
               "items": [
                 {
                   "itemKey": "news-1",
