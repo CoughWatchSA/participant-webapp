@@ -28,5 +28,10 @@
     "title": "Profile selection",
     "info": "Please select the profile you want to fill the survey for, or click on the 'Manage profiles' button to add new profiles",
     "manageProfilesBtn": "Manage profiles"
+  },
+  "tempParticipantConversionSuccessDialog": {
+    "title": "Temporary participant",
+    "content": "This should not appear since we are disabling temporary participants on this platform",
+    "okBtn": "Ok"
   }
 }
