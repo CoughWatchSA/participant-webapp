@@ -23,5 +23,10 @@
     "title": "Info",
     "content": "Your questionnaire has been submitted successfully.",
     "btn": "Continue"
+  },
+  "profileSelectionDialog": {
+    "title": "Profile selection",
+    "info": "Please select the profile you want to fill the survey for, or click on the 'Manage profiles' button to add new profiles",
+    "manageProfilesBtn": "Manage profiles"
   }
 }
