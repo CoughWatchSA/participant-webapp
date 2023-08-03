@@ -465,12 +465,31 @@
           ]
         },
         {
-          "key": "content",
+          "key": "news-card",
           "containerClassName": "my-3 min-vh-60",
           "columns": [
             {
+              "key": "news-col-3",
+              "className": "col-12 col-lg-5 mt-3",
+              "items": [
+                {
+                  "itemKey": "news-3",
+                  "className": "",
+                  "config": {
+                    "type": "imageCard",
+                    "action": {
+                      "type": "navigateExternal",
+                      "value": "https://www.nicd.ac.za/there-are-lots-of-myths-about-flu-we-debunk-six-of-them"
+                    },
+                    "imageSrc": "/images/flu-myth.jpg",
+                    "showActionBtn": false
+                  }
+                }
+              ]
+            },
+            {
               "key": "news-col-2",
-              "className": "col-12 col-lg-5 mt-3 mt-lg-0",
+              "className": "col-12 col-lg-5 mt-3",
               "items": [
                 {
                   "itemKey": "news-2",
@@ -489,7 +508,7 @@
             },
             {
               "key": "news-col-1",
-              "className": "col-12 col-lg-5 mt-3 mt-lg-0",
+              "className": "col-12 col-lg-5 mt-3",
               "items": [
                 {
                   "itemKey": "news-1",
