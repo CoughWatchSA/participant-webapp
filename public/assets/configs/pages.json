@@ -25,7 +25,7 @@
                   "config": {
                     "type": "teaserImage",
                     "image": {
-                      "url": "/images/landing.png",
+                      "url": "/images/landing.jpg",
                       "backgroundPosition": "50% 43%",
                       "height": 400
                     },
@@ -138,7 +138,7 @@
                   "config": {
                     "type": "teaserImage",
                     "image": {
-                      "url": "/images/landing.png",
+                      "url": "/images/landing.jpg",
                       "height": 367,
                       "height": 400
                     },
