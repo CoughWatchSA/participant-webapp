@@ -15,6 +15,12 @@
     "content": "Unfortunately, something went wrong loading the questionnaire.\n\nPlease try again or contact our support if the problem persists.",
     "btn": "Try again"
   },
+  "loginRequiredDialog": {
+    "title": "Login required",
+    "info": "You need to be logged in to submit this survey. Please log in with your account or create a new one.",
+    "loginBtn": "Log in",
+    "registerBtn": "Create an account"
+  },
   "surveySubmissionError": {
     "content": "Unfortunately, something went wrong while sending the questionnaire.\n\nPlease try again or contact our support if the problem persists.",
     "btn": "Try again"
