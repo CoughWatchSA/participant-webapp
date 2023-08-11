@@ -45,7 +45,7 @@ Epicentre from South Africa
   |                             |                                             |
   |Ms Nande Hermans             |        Editorial Specialist                 |
   |                             |                                             |
-  |Mr Athenkosi Mjobo           |                                             |
+  |Mr Athenkosi Mjobo           |        Graphic Designer                                     |
   |                             |                                             |
   |Ms Puseletso Kobedi          |        Web Content Specialist               |
   |                             |                                             |
@@ -96,10 +96,12 @@ We reached **954** volunteers who accessed the platform, where
 enrolled participants were women **178(71%)** and the largest age group
 was 30-39 years **93(37%)**. Among enrolled participants, **62(25%)**
 reported seasonal influenza vaccine receipt in 2022 and **212(85%)** had
-received at least 1 dose of COVID-19 vaccine. We were able to determine
-\<\<% to be updated\>\> of suspected ILI and \<\<% to be updated\>\>
+received at least 1 dose of COVID-19 vaccine. We received a total of 1440
+symptoms reports over 29 weeks of deployment, with an average of 50 weekly symptom
+reports sumbitted. We were able to determine **31(2%)** and **110(8%)** suspected 
+ILI cases with and without fever, respectively. We determined 359(25%) suspected
 COVID19 cases overall. Due to small enrolment numbers and inconsistent
-participation, we could not determine a correlation between reported
+participation, we could not determine a significant correlation between reported
 data from CoughWatchSA and laboratory data. A total of **88/249(36%)**
 participants were eligible for home-based testing, and **81/88(92%)**
 were successfully enrolled. We detected **6/81(7%)** influenza and
