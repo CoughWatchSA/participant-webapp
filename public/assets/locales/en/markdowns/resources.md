@@ -1,5 +1,1 @@
--   Educational materials related to public health and surveillance
-
--   Guidelines for reporting incidents or health concerns
-
--   Frequently asked questions (FAQ) section
+- Please download our [CoughWatchSA User Guide](/assets/images/user_guide.pdf) for detailed information on how to use this site
