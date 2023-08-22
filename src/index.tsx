@@ -21,7 +21,7 @@ import {
   faPen,
   faTrash,
 } from '@fortawesome/free-solid-svg-icons';
-import { faTwitter, faFacebook } from '@fortawesome/free-brands-svg-icons';
+import { faTwitter, faFacebook, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { library, dom } from '@fortawesome/fontawesome-svg-core';
 
 import 'bootstrap/dist/js/bootstrap.bundle';
@@ -34,7 +34,7 @@ const fallbackLanguage = process.env.REACT_APP_FALLBACK_LANGUAGE ?? 'en';
 
 initI18n(defaultLanguage, fallbackLanguage, localeURL);
 
-library.add(faSignOutAlt, faCog, faArrowRight, faArrowLeft, faBars, faPen, faTrash, faTwitter, faFacebook);
+library.add(faSignOutAlt, faCog, faArrowRight, faArrowLeft, faBars, faPen, faTrash, faTwitter, faFacebook, faLinkedin);
 dom.watch();
 
 ReactDOM.render(

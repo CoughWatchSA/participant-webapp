@@ -27,14 +27,20 @@
         {
           "type": "external",
           "itemKey": "twitter",
-          "value": "about:blank",
+          "value": "https://bit.ly/2NjLKyB",
           "iconClass": "fab fa-twitter"
         },
         {
           "type": "external",
           "itemKey": "facebook",
-          "value": "about:blank",
+          "value": "https://bit.ly/2xUSzSF",
           "iconClass": "fab fa-facebook"
+        },
+        {
+          "type": "external",
+          "itemKey": "linkedin",
+          "value": "https://bit.ly/2P8jctE",
+          "iconClass": "fab fa-linkedin"
         }
       ]
     }
