@@ -4151,12 +4151,12 @@ case-sensitive-paths-webpack-plugin@^2.4.0:
   resolved "https://registry.yarnpkg.com/case-sensitive-paths-webpack-plugin/-/case-sensitive-paths-webpack-plugin-2.4.0.tgz#db64066c6422eed2e08cc14b986ca43796dbc6d4"
   integrity sha512-roIFONhcxog0JSSWbvVAh3OocukmSgpqOH6YpMkCvav/ySIV3JKg4Dc8vYtQjYi/UxpNE36r/9v+VqTQqgkYmw==
 
-"case-web-app-core@npm:@influenzanet/case-web-app-core@^v2.7.4-staging.5":
-  version "2.7.4-staging.5"
-  resolved "https://registry.yarnpkg.com/@influenzanet/case-web-app-core/-/case-web-app-core-2.7.4-staging.5.tgz#f57945c0a3b08eed18fdbba7374adc9aea9996c7"
-  integrity sha512-8sKurKd+lg3P4DYGqwAzam+0yCFo542GLHv7yr8kDEDvs7m7jFLz0GKogonIKUI0hSy37cFN2YX2wkeewhrxKA==
+"case-web-app-core@npm:@influenzanet/case-web-app-core@v2.7.4-staging.7":
+  version "2.7.4-staging.7"
+  resolved "https://registry.yarnpkg.com/@influenzanet/case-web-app-core/-/case-web-app-core-2.7.4-staging.7.tgz#2dd76d7701fb7d8c9eaccb3a9d91845afca347a3"
+  integrity sha512-9j1yMrUr7f0XYLnlamxKDcZqOaPqu5r5dBCOp+5XLH7AOsqbIL9CdJSUX43SmcwMI/XDCeMWN1A7nh0KSIsIGQ==
 
-"case-web-ui@npm:@influenzanet/case-web-ui@^v1.14.8-staging.4":
+"case-web-ui@npm:@influenzanet/case-web-ui@v1.14.8-staging.4":
   version "1.14.8-staging.4"
   resolved "https://registry.yarnpkg.com/@influenzanet/case-web-ui/-/case-web-ui-1.14.8-staging.4.tgz#26eb269a63d25b98372773bd10a5f9ed7e33dfc8"
   integrity sha512-G4iqL1j0PxWqCEUb2nIYWo302wH/ZSzNn2s2uOQ9g7U0diT/S1HEsqnMgNM0brOKqCOpNw587rbnDUZq+N1rSA==
