@@ -201,11 +201,6 @@
                     "type": "linkList",
                     "links": [
                       {
-                        "linkKey": "profileSettings",
-                        "type": "dialog",
-                        "value": "manageProfiles"
-                      },
-                      {
                         "linkKey": "communicationSettings",
                         "type": "dialog",
                         "value": "changeNotifications"
@@ -765,7 +760,7 @@
                   "itemKey": "account",
                   "config": {
                     "type": "accountSettings",
-                    "allowProfileSettings": true
+                    "hideProfileSettings": true
                   }
                 },
                 {
